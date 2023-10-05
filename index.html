@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Assignment 1 | COMP1073 Client-Side JavaScript</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+	<h1>See-N-Say Storymaker</h1>
+	<!-- Display student ID -->
+	<p id="studentId"></p>
+	<section>
+		<h2>Create Your Story</h2>
+		<!-- Noun1 -->
+		<button onclick="noun1OnClick()">Noun 1</button>
+		<p id="choosenNoun1"></p>
+		<!-- Verb -->
+		<button onclick="verbOnClick()">Verb</button>
+		<p id="choosenVerb"></p>
+		<!-- Adjective -->
+		<button onclick="adjectiveOnClick()">Adjective</button>
+		<p id="choosenAdjective"></p>
+		<!-- Noun2 -->
+		<button onclick="noun2OnClick()">Noun 2</button>
+		<p id="choosenNoun2"></p>
+		<!-- Setting -->
+		<button onclick="settingOnClick()">Setting</button>
+		<p id="choosenSetting"></p>
+		<!-- Reset chosen words and story -->
+		<button onclick="resetOnClick()">Reset</button>
+	</section>
+	<section>
+		<h2>See Your Story</h2>
+		<!-- Button to display user-chosen story -->
+		<button onclick="playbackOnClick()">Show Story</button>
+		<!-- Button to generate and display random story -->
+		<button onclick="randomOnClick()">Random Story</button>
+		<!-- Paragraph to display story -->
+		<p id="story"></p>
+	</section>
+	<script src="js/storymaker.js"></script>
+</body>
+
+</html>
